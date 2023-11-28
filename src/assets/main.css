@@ -1,0 +1,129 @@
+/* Reset de estilos y caja de modelado */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    padding: 0;
+    margin: 0;
+    margin-top: 150px;
+    background: #e3e3e3; 
+}
+
+/* Estilos generales de la aplicación */
+#app {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Estilos de enlaces */
+a,
+a:visited {
+    color: rgb(17, 17, 88);
+}
+
+/* Contenedor principal */
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+/* Estilos de la página de inicio */
+.home img {
+    max-width: 230px;
+}
+.home .destinations {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Encabezado de navegación */
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 30px;
+    background: rgb(255, 166, 0); 
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+#nav a {
+    display: inline-block;
+    margin-right: 20px;
+    color: rgb(58, 58, 58);
+}
+#nav a.router-link-active,
+#nav a:hover {
+    color: black;
+}
+#logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+/* Estilos de enlaces globales */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Detalles de la destinación */
+.destination-details {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.destination-details img {
+    border-radius: 4px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+/* Experiencias */
+.experiences {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-top: 30px;
+    border-top: 1px solid #d4d4d4;
+    box-shadow: 0px -1px #fbfbfb;
+}
+.experiences .card {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.experiences .card:hover {
+    transform: scale(1.05);
+}
+.experiences .cards {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.experiences img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+.experiences .card .card__text {
+    background: rgb(255, 166, 0); 
+    color: black;
+    display: block;
+    border-top: 2px solid #ffffff;
+    padding: 10px;
+}
+
+/* Detalles de la experiencia */
+.experience-details img {
+    float: left;
+    margin: 10px;
+}
